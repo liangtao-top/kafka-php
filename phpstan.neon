@@ -1,0 +1,8 @@
+includes:
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+    - vendor/phpstan/phpstan-strict-rules/rules.neon
+
+parameters:
+    ignoreErrors:
+        - '#Call to an undefined method Kafka\\Config.*::(g|s)etValidKey\(\)#'
+        - '#Call to an undefined method Kafka\\Config.*::pureMagic\(\)#'

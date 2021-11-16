@@ -1,0 +1,49 @@
+{
+  "name": "liangtao/kafka-php",
+  "type": "library",
+  "description": "PHP client for Kafka version 2.7.1",
+  "keywords": [
+    "kafka",
+    "kafka-php",
+    "kafka-client"
+  ],
+  "homepage": "https://github.com/liangtao-top/kafka-php",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "TaoGe",
+      "email": "liangtao.gz@foxmail.com",
+      "role": "Developer",
+      "homepage": "https://github.com/liangtao-top"
+    }
+  ],
+  "require": {
+    "php": ">=8.0.12",
+    "amphp/amp": "^2.0.3",
+    "lcobucci/clock": "^1.0",
+    "psr/log": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kafka\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "KafkaTest\\": "tests/",
+      "KafkaExample\\": "example/"
+    }
+  },
+  "suggest": {
+    "ext-krb5": "To be able to ues the GSSAPI SASL mechanism"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    }
+  ]
+}

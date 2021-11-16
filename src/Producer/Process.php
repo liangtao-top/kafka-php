@@ -317,6 +317,7 @@ class Process
         $topics   = $broker->getTopics();
 
         foreach ($recordSet as $record) {
+
             $this->recordValidator->validate($record, $topics);
 
             $topicMeta = $topics[$record['topic']];

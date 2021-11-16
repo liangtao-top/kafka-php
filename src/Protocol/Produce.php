@@ -10,6 +10,7 @@ use Lcobucci\Clock\SystemClock;
 use function crc32;
 use function is_array;
 use function substr;
+use DateTimeZone;
 
 class Produce extends Protocol
 {
@@ -37,7 +38,7 @@ class Produce extends Protocol
     {
         parent::__construct($version);
 
-        $this->clock = $clock ?: new SystemClock();
+        $this->clock = $clock ?: new SystemClock( new DateTimeZone(date_default_timezone_get()));
     }
 
     /**

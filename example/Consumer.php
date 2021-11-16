@@ -6,17 +6,17 @@ date_default_timezone_set('PRC');
 
 use Kafka\Consumer;
 use Kafka\ConsumerConfig;
-use Monolog\Handler\StdoutHandler;
-use Monolog\Logger;
-
-// Create the logger
-$logger = new Logger('my_logger');
-// Now add some handlers
-$logger->pushHandler(new StdoutHandler());
+//use Monolog\Handler\StdoutHandler;
+//use Monolog\Logger;
+//
+//// Create the logger
+//$logger = new Logger('my_logger');
+//// Now add some handlers
+//$logger->pushHandler(new StdoutHandler());
 
 $config = ConsumerConfig::getInstance();
 $config->setMetadataRefreshIntervalMs(10000);
-$config->setMetadataBrokerList('127.0.0.1:9092');
+$config->setMetadataBrokerList('192.168.0.255:9092');
 $config->setGroupId('test');
 $config->setBrokerVersion('1.0.0');
 $config->setTopics(['test']);
@@ -28,7 +28,7 @@ $config->setOffsetReset('earliest');
 //$config->setSslPassphrase('123456');
 //$config->setSslPeerName('nmred');
 $consumer = new Consumer();
-$consumer->setLogger($logger);
+//$consumer->setLogger($logger);
 $consumer->start(function ($topic, $part, $message): void {
-    var_dump($message);
+    print_r($message);
 });

@@ -2,9 +2,9 @@ Kafka-php
 ==========
 
 [![Build Status](https://travis-ci.com/liangtao-top/kafka-php.svg?branch=main)](https://travis-ci.com/github/liangtao-top/kafka-php)
-[![Packagist](https://img.shields.io/packagist/dm/liangtao/kafka-php.svg?style=plastic)]()
-[![Packagist](https://img.shields.io/packagist/dd/liangtao/kafka-php.svg?style=plastic)]()
-[![Packagist](https://img.shields.io/packagist/dt/liangtao/kafka-php.svg?style=plastic)]()
+[![Packagist](https://img.shields.io/packagist/dm/liangtao/kafka-php.svg?style=plastic)](https://packagist.org/packages/liangtao/kafka-php)
+[![Packagist](https://img.shields.io/packagist/dd/liangtao/kafka-php.svg?style=plastic)](https://packagist.org/packages/liangtao/kafka-php)
+[![Packagist](https://img.shields.io/packagist/dt/liangtao/kafka-php.svg?style=plastic)](https://packagist.org/packages/liangtao/kafka-php)
 [![GitHub issues](https://img.shields.io/github/issues/liangtao-top/kafka-php.svg?style=plastic)](https://github.com/liangtao-top/kafka-php/issues)
 [![GitHub forks](https://img.shields.io/github/forks/liangtao-top/kafka-php.svg?style=plastic)](https://github.com/liangtao-top/kafka-php/network)
 [![GitHub stars](https://img.shields.io/github/stars/liangtao-top/kafka-php.svg?style=plastic)](https://github.com/liangtao-top/kafka-php/stargazers)

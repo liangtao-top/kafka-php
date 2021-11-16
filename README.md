@@ -1,7 +1,7 @@
 Kafka-php
 ==========
 
-[![Build Status](https://travis-ci.org/liangtao-top/kafka-php.svg?branch=main)](https://travis-ci.org/liangtao-top/kafka-php)
+[![Build Status](https://travis-ci.com/liangtao-top/kafka-php.svg?branch=main)](https://travis-ci.com/github/liangtao-top/kafka-php)
 [![Packagist](https://img.shields.io/packagist/dm/liangtao/kafka-php.svg?style=plastic)]()
 [![Packagist](https://img.shields.io/packagist/dd/liangtao/kafka-php.svg?style=plastic)]()
 [![Packagist](https://img.shields.io/packagist/dt/liangtao/kafka-php.svg?style=plastic)]()
@@ -15,8 +15,8 @@ Kafka-php 使用纯粹的PHP 编写的 kafka 客户端，目前支持 2.7.1 以�
 
 ## 安装环境要求
 
-* PHP 版本大于 8.0
-* Kafka Server 版本大于 2.7.1
+* PHP >= 8.0
+* Kafka Server >= 2.7.1
 * 消费模块 Kafka Server 版本需要大于 0.9.0
 
 ## 使用 Composer 安装
@@ -81,7 +81,7 @@ $producer->send(true);
 
 ### 同步方式调用生产者
 
-```
+```php
 <?php
 require '../vendor/autoload.php';
 date_default_timezone_set('PRC');

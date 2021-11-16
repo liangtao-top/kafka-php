@@ -10,21 +10,17 @@ trait SingletonTrait
     use LoggerAwareTrait;
     use LoggerTrait;
 
-    /**
-     * @var object
-     */
-    protected static $instance;
+    protected static self $instance;
 
     /**
      * Need to be compatible php 7.1.x, so this scene cannot be specified return type `object`
-     * @return object
+     * @return static
      */
-    public static function getInstance()
+    public static function getInstance():static
     {
         if (self::$instance === null) {
             static::$instance = new static();
         }
-
         return static::$instance;
     }
 

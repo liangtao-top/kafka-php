@@ -199,8 +199,8 @@ abstract class Protocol
         $left  = 0xffffffff00000000;
         $right = 0x00000000ffffffff;
 
-        $l = ($data & $left) >> 32;
-        $r = $data & $right;
+        $l = ($data & (int)$left) >> 32;
+        $r = $data & (int)$right;
 
         return pack($type, $l, $r);
     }
